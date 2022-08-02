@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Calculator</title>
+</head>
+
+<body>
+    
+    <section>
+        <br>
+        <br>
+        <div id="cal-body">
+           <!-- <center><h1>Casio</h1></center> -->
+            <input type="text" disabled id="result" placeholder="0">
+            <br>
+            <button onclick="getNumber('%')" id="percent" class="style_btn">%</button>
+            <button onclick="getSqrt('√')" id="sqrt" class="style_btn">√</button>
+            <button onclick="clearResult()" class="style_btn clear_btn">C</button>
+            <br>
+            <button onclick="getNumber('7')" class="style_btn">7</button>
+            <button onclick="getNumber('8')" class="style_btn">8</button>
+            <button onclick="getNumber('9')" class="style_btn">9</button>
+            <button onclick="getNumber('/')" class="style_btn" id="divide">/</button>
+            <br>
+            <button onclick="getNumber('4')" class="style_btn">4</button>
+            <button onclick="getNumber('5')" class="style_btn">5</button>
+            <button onclick="getNumber('6')" class="style_btn">6</button>
+            <button onclick="getNumber('*')" class="style_btn" id="multiply">x</button>
+            <br>
+            <button onclick="getNumber('1')" class="style_btn">1</button>
+            <button onclick="getNumber('2')" class="style_btn">2</button>
+            <button onclick="getNumber('3')" class="style_btn">3</button>
+            <button onclick="getNumber('-')" class="style_btn" id="minus">-</button>
+            <br>
+            <button onclick="getNumber('.')" id="dot" class="style_btn">.</button>
+            <button onclick="getNumber('0')" class="style_btn">0</button>
+            <button onclick="getResult()" class="style_btn">=</button>
+            <button onclick="getNumber('+')" id="plus" class="style_btn">+</button>
+    
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
